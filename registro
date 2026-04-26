@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Cocona</title>
+</head>
+ 
+<body bgcolor="#3C3C3C">
+<center>
+<font face="Algerian" size="15" color="#FFFFFF">REGISTRO</font>
+<p>
+<font face="Algerian" size="6" color="#FFFFFF">Conalep Roberto Ruiz Obregón</font>
+ 
+        <hr>
+<p>
+<p>
+<form>
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+<tr>
+<td bgcolor="#FFFFFF">Puesto:</td>
+<td align="center">
+<select>
+<option value="">Selecciona</option>
+<option value="Profesor">Profesor</option>
+<option value="Alumno">Alumno</option>
+</select>
+</td>
+</tr>
+ 
+                <tr>
+<td bgcolor="#FFFFFF">Correo:</td>
+<td><input type="text" size="50" name="correo"></td>
+</tr>
+ 
+                <tr>
+<td bgcolor="#FFFFFF">Nombre:</td>
+<td><input type="text" size="50" name="nombre"></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF">Grupo:</td>
+<td><input type="text" size="50" name="grupo"></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF">Carrera:</td>
+<td><input type="text" size="50" name="carrera"></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF">No. telefonico:</td>
+<td><input type="text" size="50" name="telefono"></td>
+</tr>
+ 
+                <tr>
+<td colspan=2 align="center" bgcolor="#FFFFFF">
+<input type="submit" value="Registrarse">
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
+ 
