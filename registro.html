@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Sistema de Tareas - Registro</title>
+</head>
+
+<body bgcolor="#3C3C3C">
+<center>
+
+<font face="Algerian" size="15" color="#FFFFFF">SISTEMA DE TAREAS</font>
+<p>
+<font face="Algerian" size="6" color="#FFFFFF">Registro</font>
+
+<hr>
+
+<form action="registro.php" method="post">
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+
+ <tr>
+  <td bgcolor="#FFFFFF">Puesto:</td>
+  <td align="center">
+   <select name="tipo">
+    <option value="">Selecciona</option>
+    <option value="profesor">Profesor</option>
+    <option value="alumno">Alumno</option>
+   </select>
+  </td>
+ </tr>
+
+ <tr>
+  <td bgcolor="#FFFFFF">Nombre:</td>
+  <td><input type="text" size="50" name="nombre" placeholder="1er_apellido 2do_apellido Nombre"></td>
+ </tr>
+
+ <tr>
+  <td bgcolor="#FFFFFF">Correo:</td>
+  <td><input type="text" size="50" name="correo" placeholder="ejemplo@correo.com"></td>
+ </tr>
+
+ <tr>
+  <td bgcolor="#FFFFFF">Contrasena:</td>
+  <td><input type="password" size="50" name="contrasena" placeholder="Recuerde su contrasena"></td>
+ </tr>
+
+ <tr>
+  <td bgcolor="#FFFFFF">Repetir contrasena:</td>
+  <td><input type="password" size="50" name="contrasena2"></td>
+ </tr>
+
+ <!-- Solo alumnos necesitan semestre y carrera -->
+ <!-- En PHP se podria mostrar/ocultar segun el puesto seleccionado -->
+ <!-- Por ahora se muestran siempre, el profesor los ignora -->
+
+ <tr>
+  <td bgcolor="#FFFFFF">Semestre:</td>
+  <td align="center">
+   <select name="semestre">
+    <option value="">Selecciona</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+   </select>
+  </td>
+ </tr>
+
+ <tr>
+  <td bgcolor="#FFFFFF">Carrera:</td>
+  <td align="center">
+   <select name="carrera">
+    <option value="">Selecciona</option>
+    <!-- Aqui van las carreras de tu plantel, estos son de ejemplo -->
+    <option value="10">Informatica (10)</option>
+    <option value="06">Ciencia de datos (06)</option>
+    <option value="">Maquinas y herramientas ()</option>
+    <option value="04">Alimentos y bebidas (04)</option>
+   </select>
+  </td>
+ </tr>
+
+ <tr>
+  <td colspan="2" align="center" bgcolor="#FFFFFF">
+   <input type="submit" value="Registrarse">
+  </td>
+ </tr>
+
+</table>
+</form>
+
+<p>
+<a href="index.html"><font color="#FFFFFF">Ya tengo cuenta</font></a>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Sistema de Tareas - Nuevo Aviso</title>
+</head>
+
+<body bgcolor="#3C3C3C">
+<center>
+
+<font face="Algerian" size="15" color="#FFFFFF">SISTEMA DE TAREAS</font>
+<p>
+<font face="Algerian" size="6" color="#FFFFFF">Publicar Aviso</font>
+
+<hr>
+
+<form action="nuevo_aviso.php" method="post">
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+
+ <tr>
+  <td bgcolor="#FFFFFF">Aviso:</td>
+  <td><textarea name="aviso" rows="5" cols="40"></textarea></td>
+ </tr>
+
+ <tr>
+  <td bgcolor="#FFFFFF">Grupo:</td>
+  <td align="center">
+   <select name="grupo_id">
+    <option value="">Selecciona</option>
+    <!-- En PHP aqui iria: foreach($grupos as $grupo) { ?>
+    <option value="<?php echo $grupo['id']; ?>">
+     <?php echo $grupo['semestre'] . $grupo['carrera'] . " - " . $grupo['materia']; ?>
+    </option>
+    <?php } -->
+   </select>
+  </td>
+ </tr>
+
+ <tr>
+  <td colspan="2" align="center" bgcolor="#FFFFFF">
+   <input type="submit" value="Publicar Aviso">
+  </td>
+ </tr>
+
+</table>
+</form>
+
+<p>
+<a href="panel_profesor.html"><font color="#FFFFFF">Volver al panel</font></a>
+
+</center>
+</body>
+</html>

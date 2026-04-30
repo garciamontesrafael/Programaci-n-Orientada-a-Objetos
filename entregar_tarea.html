@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Sistema de Tareas - Entregar</title>
+</head>
+
+<body bgcolor="#3C3C3C">
+<center>
+
+<font face="Algerian" size="15" color="#FFFFFF">SISTEMA DE TAREAS</font>
+<p>
+<font face="Algerian" size="6" color="#FFFFFF">Entregar Tarea</font>
+
+<hr>
+
+<!-- En PHP estos datos vendrian de la base de datos segun el id de la tarea -->
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Tarea:</b></td>
+  <!-- En PHP: <?php echo $tarea['titulo']; ?> -->
+  <td bgcolor="#FFFFFF">[titulo de la tarea]</td>
+ </tr>
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Grupo:</b></td>
+  <!-- En PHP: <?php echo $semestre . $carrera; ?> -->
+  <td bgcolor="#FFFFFF">[grupo]</td>
+ </tr>
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Fecha limite:</b></td>
+  <!-- En PHP: <?php echo $tarea['fecha_limite']; ?> -->
+  <td bgcolor="#FFFFFF">[fecha limite]</td>
+ </tr>
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Instrucciones:</b></td>
+  <!-- En PHP: <?php echo $tarea['descripcion']; ?> -->
+  <td bgcolor="#FFFFFF">[instrucciones de la tarea]</td>
+ </tr>
+</table>
+
+<p>
+<hr>
+
+<font face="Algerian" size="6" color="#FFFFFF">Subir Entrega</font>
+<p>
+
+<form action="entregar_tarea.php" method="post" enctype="multipart/form-data">
+
+ <!-- En PHP el id de la tarea vendria en la URL: ?id=5 -->
+ <!-- En PHP: <input type="hidden" name="tarea_id" value="<?php echo $tarea['id']; ?>"> -->
+ <input type="hidden" name="tarea_id" value="">
+
+ <table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+
+  <tr>
+   <td bgcolor="#FFFFFF">Archivo:</td>
+   <td><input type="file" name="archivo"></td>
+  </tr>
+
+  <tr>
+   <td bgcolor="#FFFFFF">Comentario:</td>
+   <td><textarea name="comentario" rows="3" cols="40"></textarea></td>
+  </tr>
+
+  <tr>
+   <td colspan="2" align="center" bgcolor="#FFFFFF">
+    <input type="submit" value="Entregar Tarea">
+   </td>
+  </tr>
+
+ </table>
+</form>
+
+<p>
+<a href="panel_alumno.html"><font color="#FFFFFF">Volver al panel</font></a>
+
+</center>
+</body>
+</html>

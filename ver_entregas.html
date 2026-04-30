@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Sistema de Tareas - Entregas</title>
+</head>
+
+<body bgcolor="#3C3C3C">
+<center>
+
+<font face="Algerian" size="15" color="#FFFFFF">SISTEMA DE TAREAS</font>
+<p>
+<!-- En PHP: <?php echo $titulo_tarea; ?> -->
+<font face="Algerian" size="6" color="#FFFFFF">Entregas: [nombre de la tarea]</font>
+<p>
+<!-- En PHP: Grupo <?php echo $semestre.$carrera; ?> -->
+<font face="Arial" size="4" color="#FFFF00">Grupo: [grupo] &nbsp;&nbsp; Fecha limite: [fecha]</font>
+
+<hr>
+
+<!-- En PHP: $entregadas . " de " . $total_alumnos -->
+<font face="Arial" size="4" color="#FFFFFF">Entregas recibidas: 0 de 0</font>
+<p>
+
+<!-- ====== ALUMNOS QUE SI ENTREGARON ====== -->
+
+<font face="Algerian" size="6" color="#99FF99">Entregaron</font>
+<p>
+
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Alumno</b></td>
+  <td bgcolor="#FFFFFF"><b>Fecha de entrega</b></td>
+  <td bgcolor="#FFFFFF"><b>Archivo</b></td>
+  <td bgcolor="#FFFFFF"><b>Comentario</b></td>
+ </tr>
+ <!-- En PHP aqui iria: foreach($entregas as $entrega) { ... } -->
+ <tr>
+  <td colspan="4" align="center" bgcolor="#FFFFFF">Nadie ha entregado aun</td>
+ </tr>
+</table>
+
+<p>
+<hr>
+
+<!-- ====== ALUMNOS QUE NO ENTREGARON ====== -->
+
+<font face="Algerian" size="6" color="#FF9999">No han entregado</font>
+<p>
+
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Alumno</b></td>
+ </tr>
+ <!-- En PHP aqui iria: foreach($sin_entrega as $alumno) { ... } -->
+ <tr>
+  <td align="center" bgcolor="#FFFFFF">Sin datos</td>
+ </tr>
+</table>
+
+<p>
+<a href="panel_profesor.html"><font color="#FFFFFF">Volver al panel</font></a>
+
+</center>
+</body>
+</html>

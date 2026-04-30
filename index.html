@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Sistema de Tareas</title>
+</head>
+
+<body bgcolor="#3C3C3C">
+<center>
+
+<font face="Algerian" size="15" color="#FFFFFF">SISTEMA DE TAREAS</font>
+<p>
+<font face="Algerian" size="6" color="#FFFFFF">Iniciar Sesion</font>
+
+<hr>
+
+<form action="login.php" method="post">
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+
+ <tr>
+  <td bgcolor="#FFFFFF">Puesto:</td>
+  <td align="center">
+   <select name="tipo">
+    <option value="">Selecciona</option>
+    <option value="profesor">Profesor</option>
+    <option value="alumno">Alumno</option>
+   </select>
+  </td>
+ </tr>
+
+ <tr>
+  <td bgcolor="#FFFFFF">Correo:</td>
+  <td><input type="text" size="50" name="correo" placeholder="1er. Apellido 2do. Apellido Nombre"> </td>
+ </tr>
+
+ <tr>
+  <td bgcolor="#FFFFFF">Contrasena:</td>
+  <td><input type="password" size="50" name="contrasena" placeholder="**********"></td>
+ </tr>
+
+ <tr>
+  <td align="left" bgcolor="#FFFFFF">
+   <a href="registro.html">Registrarse</a>
+  </td>
+  <td align="center" bgcolor="#FFFFFF">
+   <input type="submit" value="Iniciar Sesion">
+  </td>
+ </tr>
+
+</table>
+</form>
+
+</center>
+</body>
+</html>

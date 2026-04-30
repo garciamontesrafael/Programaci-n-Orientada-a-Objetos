@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Sistema de Tareas - Alumno</title>
+</head>
+
+<body bgcolor="#3C3C3C">
+<center>
+
+<font face="Algerian" size="15" color="#FFFFFF">SISTEMA DE TAREAS</font>
+<p>
+<!-- En PHP: Bienvenido, <?php echo $nombre; ?> -->
+<font face="Algerian" size="6" color="#FFFF00">Bienvenido, [nombre del alumno]</font>
+<p>
+<!-- En PHP: Grupo <?php echo $grupo; ?> -->
+<font face="Arial" size="4" color="#FFFFFF">Grupo: [grupo]</font>
+
+<hr>
+
+<a href="index.html"><font color="#FFFFFF">Cerrar Sesion</font></a>
+
+<hr>
+
+<!-- ====== GRUPOS ====== -->
+
+<font face="Algerian" size="8" color="#FFFFFF">Mis Grupos</font>
+<p>
+
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Grupo</b></td>
+  <td bgcolor="#FFFFFF"><b>Profesor</b></td>
+  <td bgcolor="#FFFFFF"><b>Materia</b></td>
+  <td bgcolor="#FFFFFF"><b>Ver</b></td>
+ </tr>
+ <!-- En PHP aqui iria: foreach($grupos as $grupo) { ... } -->
+ <tr>
+  <td colspan="4" align="center" bgcolor="#FFFFFF">No estas inscrito en ningun grupo</td>
+ </tr>
+</table>
+
+<p>
+<a href="unirse_grupo.html"><font color="#FFFF00">+ Unirse a un grupo</font></a>
+
+<hr>
+
+<!-- ====== AVISOS ====== -->
+
+<font face="Algerian" size="8" color="#FFFFFF">Avisos</font>
+<p>
+
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Aviso</b></td>
+  <td bgcolor="#FFFFFF"><b>Grupo</b></td>
+  <td bgcolor="#FFFFFF"><b>Fecha</b></td>
+ </tr>
+ <!-- En PHP aqui iria: foreach($avisos as $aviso) { ... } -->
+ <tr>
+  <td colspan="3" align="center" bgcolor="#FFFFFF">No hay avisos</td>
+ </tr>
+</table>
+
+<hr>
+
+<!-- ====== TAREAS ====== -->
+
+<font face="Algerian" size="8" color="#FFFFFF">Mis Tareas</font>
+<p>
+
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Tarea</b></td>
+  <td bgcolor="#FFFFFF"><b>Grupo</b></td>
+  <td bgcolor="#FFFFFF"><b>Fecha Limite</b></td>
+  <td bgcolor="#FFFFFF"><b>Estado</b></td>
+  <td bgcolor="#FFFFFF"><b>Accion</b></td>
+ </tr>
+ <!-- En PHP aqui iria: foreach($tareas as $tarea) { ... } -->
+ <tr>
+  <td colspan="5" align="center" bgcolor="#FFFFFF">No hay tareas asignadas</td>
+ </tr>
+</table>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Sistema de Tareas - Profesor</title>
+</head>
+
+<body bgcolor="#3C3C3C">
+<center>
+
+<font face="Algerian" size="15" color="#FFFFFF">SISTEMA DE TAREAS</font>
+<p>
+<!-- En PHP: Bienvenido, <?php echo $nombre; ?> -->
+<font face="Algerian" size="6" color="#FFFF00">Bienvenido, [nombre del profesor]</font>
+
+<hr>
+
+<a href="index.html"><font color="#FFFFFF">Cerrar Sesion</font></a>
+
+<hr>
+
+<!-- ====== GRUPOS ====== -->
+
+<font face="Algerian" size="8" color="#FFFFFF">Mis Grupos</font>
+<p>
+
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Grupo</b></td>
+  <td bgcolor="#FFFFFF"><b>Carrera</b></td>
+  <td bgcolor="#FFFFFF"><b>Semestre</b></td>
+  <td bgcolor="#FFFFFF"><b>Alumnos</b></td>
+  <td bgcolor="#FFFFFF"><b>Ver</b></td>
+ </tr>
+ <!-- En PHP aqui iria: foreach($grupos as $grupo) { ... } -->
+ <tr>
+  <td colspan="5" align="center" bgcolor="#FFFFFF">No hay grupos creados</td>
+ </tr>
+</table>
+
+<p>
+<a href="nuevo_grupo.html"><font color="#FFFF00">+ Crear nuevo grupo</font></a>
+
+<hr>
+
+<!-- ====== AVISOS ====== -->
+
+<font face="Algerian" size="8" color="#FFFFFF">Avisos Publicados</font>
+<p>
+
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Aviso</b></td>
+  <td bgcolor="#FFFFFF"><b>Grupo</b></td>
+  <td bgcolor="#FFFFFF"><b>Fecha</b></td>
+ </tr>
+ <!-- En PHP aqui iria: foreach($avisos as $aviso) { ... } -->
+ <tr>
+  <td colspan="3" align="center" bgcolor="#FFFFFF">No hay avisos publicados</td>
+ </tr>
+</table>
+
+<p>
+<a href="nuevo_aviso.html"><font color="#FFFF00">+ Publicar aviso</font></a>
+
+<hr>
+
+<!-- ====== TAREAS ====== -->
+
+<font face="Algerian" size="8" color="#FFFFFF">Tareas Asignadas</font>
+<p>
+
+<table border="2" bgcolor="#FF66FF" bordercolor="#7E02FD">
+ <tr>
+  <td bgcolor="#FFFFFF"><b>Tarea</b></td>
+  <td bgcolor="#FFFFFF"><b>Grupo</b></td>
+  <td bgcolor="#FFFFFF"><b>Fecha Limite</b></td>
+  <td bgcolor="#FFFFFF"><b>Entregas</b></td>
+  <td bgcolor="#FFFFFF"><b>Ver</b></td>
+ </tr>
+ <!-- En PHP aqui iria: foreach($tareas as $tarea) { ... } -->
+ <tr>
+  <td colspan="5" align="center" bgcolor="#FFFFFF">No hay tareas asignadas</td>
+ </tr>
+</table>
+
+<p>
+<a href="nueva_tarea.html"><font color="#FFFF00">+ Asignar nueva tarea</font></a>
+
+</center>
+</body>
+</html>
